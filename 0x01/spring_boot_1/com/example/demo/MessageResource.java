@@ -1,4 +1,4 @@
-package com.example.spring_boot_1;
+package com.example.demo;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
