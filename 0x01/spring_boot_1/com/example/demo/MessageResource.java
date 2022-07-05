@@ -16,12 +16,12 @@ public class MessageResource {
     }
 
     @GetMapping("/login")
-    public String login(@RequestParam String login, String senha) {
-        if(login.isEmpty() || login.isBlank() || senha.isEmpty() || senha.isBlank()){
+    public String user(@RequestParam String user, String senha) {
+        if(user.isEmpty() || user.isBlank() || senha.isEmpty() || senha.isBlank()){
             return "USUÁRIO E SENHA NÃO INFORMADOS";
         }
 
-        if(login.length() > 15 || senha.length() > 15){
+        if(user.length() > 15 || senha.length() > 15){
             return "USUÁRIO E SENHA INVÁLIDOS";
         }
        
